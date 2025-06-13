@@ -1,4 +1,4 @@
-# VisiGen
+# PromptEnhancer
 
 <p align="center">
 <img src="logo.png"
