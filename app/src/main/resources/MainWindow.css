@@ -1,0 +1,88 @@
+
+.root { 
+    -fx-background-color: #2B2B2B; 
+    -fx-font-family: "Arial";
+}
+
+.copyright-label {
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 10px;
+    -fx-padding: 5px 0 0 0;
+}
+
+
+.input-area-container {
+    -fx-background-color: #1e1e1e;
+    -fx-background-radius: 25px; 
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 2, 2);
+    -fx-border-color: #333333; 
+    -fx-border-width: 1px;
+    -fx-border-radius: 25px;
+}
+
+.prompt-field {
+    -fx-background-color: transparent; 
+    -fx-text-fill: #E0E0E0; 
+    -fx-prompt-text-fill: #757575; 
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-padding: 8px 5px;
+}
+
+.options-bar .button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #BDBDBD;
+    -fx-font-size: 11px;
+    -fx-background-radius: 15px; 
+    -fx-padding: 5px 10px;
+    -fx-min-height: 28px;
+}
+
+.options-bar .button:hover {
+    -fx-background-color: #454545;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+/* Circular/Icon-only Buttons */
+.icon-button-circular {
+    -fx-background-color: #333333;
+    -fx-text-fill: #BDBDBD; 
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 50%;
+    -fx-padding: 5px; 
+    -fx-alignment: CENTER;
+}
+.icon-button-circular:hover {
+    -fx-background-color: #454545;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+/* Send Button (Up Arrow) */
+.send-button {
+    -fx-background-color: #4A4A4A; 
+    -fx-text-fill: #E0E0E0;
+    -fx-font-size: 18px; 
+    -fx-font-weight: bold;
+    -fx-background-radius: 50%; 
+    -fx-padding: 8px;
+    -fx-alignment: CENTER;
+}
+.send-button:hover {
+    -fx-background-color: #5A5A5A;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(79, 34, 34, 0.1), 6, 0.5, 0, 0);
+}
+
+#placeholderText {
+    -fx-text-fill: #555555;
+    -fx-font-style: italic;
+}
+.enhanced-output{
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}

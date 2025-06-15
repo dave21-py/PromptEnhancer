@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="mainWindowRoot" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainWindow" stylesheets="@MainWindow.css">
+
+    <!-- Main Content Area -->
+    <VBox alignment="TOP_CENTER" spacing="20" maxWidth="700" prefHeight="1000">
+        <padding>
+            <Insets top="40" right="20" bottom="20" left="20" />
+        </padding>
+
+        <!-- Logo -->
+        <ImageView fx:id="logoImageView" fitHeight="180" preserveRatio="true" styleClass="logo-image">
+            <image>
+                <Image url="@logo.png" />
+            </image>
+        </ImageView>
+
+            <!-- Main Input Controls (Text Field and Options) -->
+            <VBox spacing="8">
+                <TextField fx:id="promptField" promptText="Write you prompt and enter for magic..." styleClass="prompt-field"/>
+                <HBox spacing="8" alignment="CENTER_LEFT" styleClass="options-bar">
+                
+                    <!-- Help Button -->
+                    <Button fx:id="helpButton" text="?" styleClass="icon-button-circular" minWidth="28" minHeight="28"/>
+                </HBox>
+            </VBox>
+
+            <!-- Send Button -->
+            <HBox>
+            <Button fx:id="sendButton" text="↑" styleClass="send-button" minWidth="40" minHeight="40">
+            <HBox.margin>
+                <Insets left="5"/>
+            </HBox.margin>
+            </Button>
+        </HBox>
+        <TextArea fx:id="enhancedPromptArea" promptText="Your enhanced prompt will appear here..." prefRowCount="6" wrapText="true" editable="false" styleClass="enhanced-output" />
+        <!-- End of modified Input Area -->
+
+
+
+        <!-- Copyright Footer -->
+        <Label text="© 2025 David Geddam" styleClass="copyright-label" fx:id="copyright"/>
+
+    </VBox>
+</StackPane>
