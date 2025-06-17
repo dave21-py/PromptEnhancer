@@ -29,6 +29,7 @@
     -fx-padding: 8px 5px;
 }
 
+
 .options-bar .button {
     -fx-background-color: #333333;
     -fx-text-fill: #BDBDBD;
@@ -80,9 +81,12 @@
     -fx-text-fill: #555555;
     -fx-font-style: italic;
 }
-.enhanced-output{
-    -fx-text-fill: black;
-    -fx-font-size: 14px;
-    -fx-background-radius: 10px;
-    -fx-padding: 10px;
+.enhanced-output {
+    -fx-background-color: transparent; 
+    -fx-text-fill: BLACK; 
+    -fx-prompt-text-fill: #757575; 
+    -fx-border-color: transparent;
+    -fx-font-size: 15px;
+    -fx-padding: 8px 5px;
 }
+

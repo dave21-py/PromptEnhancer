@@ -53,7 +53,7 @@ public class MainWindow {
 
         System.out.println("Enhancing prompt: " + prompt);
 
-        String enhancedPrompt = "[Enhanced] " + prompt.trim() + " 🔍✨";
+        String enhancedPrompt = PromptEnhancer.enhancePrompt(prompt);
 
     if (enhancedPromptArea != null) {
         enhancedPromptArea.setText(enhancedPrompt);
